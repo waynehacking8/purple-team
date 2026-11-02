@@ -35,3 +35,13 @@ Step 5 gained four checks, one per miss class:
 4. never trust a note that a port is closed; read the ingress controller's entrypoints.
 
 Run 2 (after learning, so not blind) is recorded below once it finishes.
+
+## Run 2 (after learning, not blind)
+
+Same snapshot and tool output, skill with the four new step 5 checks. Score: 5 predicted, 4 partial, 2 missed.
+
+1. Predicted: the `returnTo` injection High as a false positive, with the right cause (fresh state, nonce and cookie on every 302); DELETE in the OPTIONS Allow; User Agent Fuzzer; HSTS on 443 from the Next redirect; certificate cannot be trusted on 6443.
+2. Partial: path traversal and file inclusion named on `_next/image` and `returnTo` (the report put path traversal on `_rsc`); port 80 open with Traefik's 404, but rated Info instead of HSTS missing; self-signed named for 443, not 6443.
+3. Missed: Proxy Disclosure (it expected no TRACE echo, which is right, but the scanner still files the item); Cookie Slack (it expected no cookie note).
+
+Lessons added: any non-405 answer to TRACE or TRACK gets a proxy-disclosure item; every cookie gets an informational note; a missing header on the controller's own 404 counts per port; certificate items repeat per TLS port. Further reruns against the same report would only overfit; the next real test is chun.lu's rescan, predicted before it arrives.

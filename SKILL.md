@@ -57,9 +57,9 @@ Before the security team scans, write `PREDICTION.md`: for each check (code scan
 5. server and version banners;
 6. dependency and base image advisories;
 7. parameters that look injectable to a scanner even when the code is safe: list every parameter a crawler can find, including framework ones (Next.js `_rsc`, the image optimizer's `url`, `w`, `q`) and redirect targets such as `returnTo`. Mark each answer that changes on every request (fresh state, nonce or cookie per call): active scanners compare answers and commonly report these as High injection, traversal or disclosure. Predict them as likely false positives and prepare the code evidence;
-8. how every route answers the unusual methods a scanner tries (TRACE, TRACK, DELETE, PUT): the answer must not echo the request or name a proxy, and OPTIONS must list only served methods;
-9. every Set-Cookie (scanners also file informational cookie notes);
-10. do not trust a design note that a port is closed: the scanner sits on another network. Read the ingress controller's entrypoints (Traefik listens on 80 and 443 for the whole cluster) and assume the port is open unless a firewall rule proves otherwise.
+8. how every route answers the unusual methods a scanner tries (TRACE, TRACK, DELETE, PUT): the answer must not echo the request or name a proxy, and OPTIONS must list only served methods. Expect a proxy-disclosure item whenever TRACE or TRACK get any answer other than 405 (a redirect, a 500, a 400): it is usually explain-only, so prepare the evidence that nothing is echoed;
+9. every Set-Cookie: expect an informational cookie note for any cookie, even a correct `__Host-` one with all flags;
+10. do not trust a design note that a port is closed: the scanner sits on another network. Read the ingress controller's entrypoints (Traefik listens on 80 and 443 for the whole cluster) and assume the port is open unless a firewall rule proves otherwise. A missing header on any answer counts, including the controller's own 404 on port 80; a host scanner reports HSTS missing per port. Certificate items repeat per TLS port: list issuer and self-signed state for each (443 by IP and by name, the cluster API, the kubelet).
 
 When the company scanner cannot reach the service (VPN-only bind, plain HTTP on a private address), say so, and predict what a host scan of the same machine would see instead. After the real report arrives, compare item by item, and add a check here or in `BEST-PRACTICE.md` for every miss.
 
