@@ -31,7 +31,9 @@ Each file in `docs/sources/` records what was borrowed and what was dropped, wit
 
 ## Industry-standard tools
 
-Static and read-only only. Installed on this Mac (user-local, checksums verified, 2026-11-02): semgrep 1.183.0, gitleaks 8.30.1, osv-scanner 2.7.0.
+Static and read-only only. Installed on this Mac (user-local, each checked against its published digest, 2026-11-02): semgrep 1.183.0, gitleaks 8.30.1, osv-scanner 2.7.0, trivy 0.76.1, hadolint 2.15.1, kube-linter 0.8.3, trufflehog 3.99.7, kubescape 4.0.17.
+
+The full list of every project, tool and standard found, with status (use, adopt next, know, skip), is `docs/CATALOG.md`. The workflow that combines them with the company practice is `docs/BEST-PRACTICE.md`; the company practice itself is `docs/sources/company-standards.md`.
 
 | Area | Tool or standard | How we use it |
 | --- | --- | --- |
@@ -48,11 +50,11 @@ Static and read-only only. Installed on this Mac (user-local, checksums verified
 | Live checks (ours) | curl, one request at a time: headers, TLS certificate, redirects, allowed methods | dev and prod, normal browser-like requests only |
 | Standards | OWASP ASVS, OWASP Top 10, OWASP WSTG (for knowing what testers look for), CIS Kubernetes Benchmark, STRIDE | severity anchors and checklists |
 
-Tools not yet installed: CodeQL, trufflehog, Trivy, hadolint, kube-linter, kubescape, Checkov, zizmor. Versions are not cited for them until installed and checked.
+Not installed yet: CodeQL, Checkov, zizmor, actionlint (see `docs/CATALOG.md` for versions and the "adopt next" list).
 
 ## Company scans
 
-How the Taiwan AI Labs security team reviews a service (SonarQube, ZAP, Nessus settings, pen test) and the first full record, SIV Reader EHD-745: see the SIV repo `docs/deployment/SECURITY_SCANS.md`. The generic version goes into this repo's references when the skill body is written.
+How the company security team reviews a service (three checks, pass bars, the explanation format for unfixed findings, pre-launch reminders, pen-test lists): `docs/sources/company-standards.md`. The first full record, SIV Reader EHD-745, is in the SIV repo `docs/deployment/SECURITY_SCANS.md`.
 
 ## Rules
 
