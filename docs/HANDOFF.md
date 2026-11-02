@@ -4,7 +4,7 @@ Read docs/PLAN.md first. This file holds state, traps and the next step; update 
 
 ## State (2026-11-02 21:30)
 - S1a: fix/ehd745-scan-findings at 89255a1f in ~/Desktop/AILabs/fedgpt-siv-reader-fresh (3 commits, pnpm verify:pre-merge green, prod render byte-identical). Not pushed.
-- Company scan facts: ZAP 2.17 unauthenticated active scan (Plugin 40018, 6, 43, 90028, 40025, 90027, 10104); Nessus 10.12.6 Advanced Scan, uncredentialed, safe checks, web app tests off, scanner 172.26.30.78, open ports 22/80/443/2000/5060/6443.
+- Company scan facts: ZAP 2.17 unauthenticated active scan (Plugin 40018, 6, 43, 90028, 40025, 90027, 10104); Nessus 10.12.6 Advanced Scan, uncredentialed, safe checks, web app tests off, scanner on the security team network, open ports 22/80/443/2000/5060/6443.
 
 ## Traps
 - Chrome account bookmarks live in Profile 1/AccountBookmarks, not Bookmarks.
