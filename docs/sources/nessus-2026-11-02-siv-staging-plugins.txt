@@ -1,0 +1,76 @@
+None | 10267 - SSH Server Type and Version Information | tcp/22/ssh
+None | 10287 - Traceroute Information | udp/0
+None | 10863 - SSL Certificate Information | tcp/443/www
+None | 10863 - SSL Certificate Information | tcp/6443/www
+None | 10863 - SSL Certificate Information | tcp/80/www
+None | 10881 - SSH Protocol Versions Supported | tcp/22/ssh
+None | 110723 - Target Credential Status by Authentication Protocol - No Credentials Provided | tcp/0
+None | 11153 - Service Detection (HELP Request) | tcp/22/ssh
+None | 11219 - Nessus SYN scanner | tcp/2000
+None | 11219 - Nessus SYN scanner | tcp/22/ssh
+None | 11219 - Nessus SYN scanner | tcp/443/www
+None | 11219 - Nessus SYN scanner | tcp/5060
+None | 11219 - Nessus SYN scanner | tcp/6443/www
+None | 11219 - Nessus SYN scanner | tcp/80/www
+None | 117886 - OS Security Patch Assessment Not Available | tcp/0
+None | 11936 - OS Identification | tcp/0
+None | 136318 - TLS Version 1.2 Protocol Detection | tcp/443/www
+None | 136318 - TLS Version 1.2 Protocol Detection | tcp/6443/www
+None | 136318 - TLS Version 1.2 Protocol Detection | tcp/80/www
+None | 138330 - TLS Version 1.3 Protocol Detection | tcp/443/www
+None | 138330 - TLS Version 1.3 Protocol Detection | tcp/6443/www
+None | 138330 - TLS Version 1.3 Protocol Detection | tcp/80/www
+None | 149334 - SSH Password Authentication Accepted | tcp/22/ssh
+None | 153588 - SSH SHA-1 HMAC Algorithms Enabled | tcp/22/ssh
+None | 156899 - SSL/TLS Recommended Cipher Suites | tcp/443/www
+None | 156899 - SSL/TLS Recommended Cipher Suites | tcp/80/www
+None | 172489 - SonicWall SonicOS Installed | tcp/0
+None | 181418 - OpenSSH Detection | tcp/22/ssh
+None | 19506 - Nessus Scan Information | tcp/0
+None | 209654 - OS Fingerprints Detected | tcp/0
+None | 21643 - SSL Cipher Suites Supported | tcp/443/www
+None | 21643 - SSL Cipher Suites Supported | tcp/6443/www
+None | 21643 - SSL Cipher Suites Supported | tcp/80/www
+None | 22964 - Service Detection | tcp/2000
+None | 22964 - Service Detection | tcp/443/www
+None | 22964 - Service Detection | tcp/5060
+None | 22964 - Service Detection | tcp/6443/www
+None | 22964 - Service Detection | tcp/80/www
+None | 24260 - HyperText Transfer Protocol (HTTP) Information | tcp/443/www
+None | 24260 - HyperText Transfer Protocol (HTTP) Information | tcp/6443/www
+None | 24260 - HyperText Transfer Protocol (HTTP) Information | tcp/80/www
+None | 25220 - TCP/IP Timestamps Supported | tcp/0
+None | 277653 - Remote Services Using Post-Quantum Ciphers | tcp/22/ssh
+None | 277653 - Remote Services Using Post-Quantum Ciphers | tcp/443/www
+None | 277653 - Remote Services Using Post-Quantum Ciphers | tcp/6443/www
+None | 277653 - Remote Services Using Post-Quantum Ciphers | tcp/80/www
+None | 277654 - TLS Supported Groups | tcp/443/www
+None | 277654 - TLS Supported Groups | tcp/6443/www
+None | 277654 - TLS Supported Groups | tcp/80/www
+None | 298387 - Shor's Harvest Now Decrypt Later | tcp/0
+None | 31422 - Reverse NAT/Intercepting Proxy Detection | tcp/0
+None | 39520 - Backported Security Patch Detection (SSH) | tcp/22/ssh
+None | 45590 - Common Platform Enumeration (CPE) | tcp/0
+None | 54615 - Device Type | tcp/0
+None | 56984 - SSL / TLS Versions Supported | tcp/443/www
+None | 56984 - SSL / TLS Versions Supported | tcp/6443/www
+None | 56984 - SSL / TLS Versions Supported | tcp/80/www
+None | 57041 - SSL Perfect Forward Secrecy Cipher Suites Supported | tcp/443/www
+None | 57041 - SSL Perfect Forward Secrecy Cipher Suites Supported | tcp/6443/www
+None | 57041 - SSL Perfect Forward Secrecy Cipher Suites Supported | tcp/80/www
+None | 70544 - SSL Cipher Block Chaining Cipher Suites Supported | tcp/443/www
+None | 70544 - SSL Cipher Block Chaining Cipher Suites Supported | tcp/80/www
+None | 70657 - SSH Algorithms and Languages Supported | tcp/22/ssh
+None | 84502 - HSTS Missing From HTTPS Server | tcp/443/www
+None | 84502 - HSTS Missing From HTTPS Server | tcp/6443/www
+None | 84502 - HSTS Missing From HTTPS Server | tcp/80/www
+None | 84821 - TLS ALPN Supported Protocol Enumeration | tcp/443/www
+None | 84821 - TLS ALPN Supported Protocol Enumeration | tcp/6443/www
+None | 84821 - TLS ALPN Supported Protocol Enumeration | tcp/80/www
+None | 94761 - SSL Root Certification Authority Certificate Information | tcp/443/www
+None | 94761 - SSL Root Certification Authority Certificate Information | tcp/6443/www
+None | 94761 - SSL Root Certification Authority Certificate Information | tcp/80/www
+Medium | 142960 - HSTS Missing From HTTPS Server (RFC 6797) | tcp/443/www
+Medium | 142960 - HSTS Missing From HTTPS Server (RFC 6797) | tcp/80/www
+Medium | 51192 - SSL Certificate Cannot Be Trusted | tcp/6443/www
+Medium | 57582 - SSL Self-Signed Certificate | tcp/6443/www
