@@ -1,0 +1,22 @@
+[
+{"query": "chun.lu 又丟了一份 ZAP 報告到 EHD-745, 幫我看哪些是真的要修", "should_trigger": true},
+{"query": "Nessus 說我們 443 沒有 HSTS, 幫我查是哪一層沒加然後修掉", "should_trigger": true},
+{"query": "新的客服中心服務下週要上線, 上線前資安要準備什麼, 幫我把 repo 檢查一遍", "should_trigger": true},
+{"query": "do a security review of ~/Desktop/gb10-agent before I show it to James", "should_trigger": true},
+{"query": "SonarQube 掃出 2 個 High security issue, 幫我判斷是不是誤判並寫說明", "should_trigger": true},
+{"query": "Trivy 掃 image 有一堆 CVE, 幫我整理哪些影響我們哪些不影響, 用公司的說明格式", "should_trigger": true},
+{"query": "pen test 11/5 要開始了, 先幫我預測他們會打到什麼", "should_trigger": true},
+{"query": "check if the siv-reader auth routes are safe, especially the OIDC callback and cookies", "should_trigger": true},
+{"query": "幫我做資安檢查, 這個 Next.js 專案的 header 跟 cookie 設定有沒有問題", "should_trigger": true},
+{"query": "pnpm audit shows a critical in better-auth, fix it properly in its own PR", "should_trigger": true},
+{"query": "總結目前所有狀況 中文超簡短", "should_trigger": false},
+{"query": "幫我把 EHD-745 的回覆草稿貼出去, 送出", "should_trigger": false},
+{"query": "the SIV classroom page has a layout bug on mobile, fix the spacing", "should_trigger": false},
+{"query": "天下雜誌的 SSL 憑證快到期了, 幫我寫更換步驟給 FAE", "should_trigger": false},
+{"query": "幫我剪 p3 的教學影片, 把主機名稱遮掉", "should_trigger": false},
+{"query": "review my last commit for correctness, it's a refactor of the exam timer", "should_trigger": false},
+{"query": "做一份 GB10 agent 的簡報給老闆, 高階就好", "should_trigger": false},
+{"query": "解釋一下 CS2680 L6 的 KV cache 是什麼, 寫成讀書會答案", "should_trigger": false},
+{"query": "k3s 升級到 1.36.5 的 pilot 計畫幫我讀一下, 摘要給我", "should_trigger": false},
+{"query": "這段文字好 AI, 幫我改自然一點", "should_trigger": false}
+]
