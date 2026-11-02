@@ -18,11 +18,11 @@ One workflow for every service: blue (find and fix), red (attacker view as knowl
 
 ## Workflow
 
-Follow the steps in order and keep notes in the service repo (or the scratchpad for a read-only review).
+Follow the steps in order and keep notes in the service repo (or the scratchpad for a read-only review). `scripts/review.sh <repo> <out-dir> [<https-base-url> <paths-file>]` runs the mechanical parts in one go: step 1 skeleton (`detect-stack.sh`), step 3 (`static-pass.sh`), step 6 when a URL is given (`live-check.sh`), and empty `PREDICTION.md` and `FINDINGS.md` templates for steps 4 and 5. The judgment steps stay yours.
 
 ### 1. Context block
 
-Write down: stack and versions, package manager, base images; every deploy overlay rendered (for example dev and prod path mode), ingress, entrypoints, who terminates TLS; identity provider, session type, roles, public routes; stored personal data; owners of each neighbour system. Without this, severity is guesswork.
+Start from the `detect-stack.sh` skeleton, then write down: stack and versions, package manager, base images; every deploy overlay rendered (for example dev and prod path mode), ingress, entrypoints, who terminates TLS; identity provider, session type, roles, public routes; stored personal data; owners of each neighbour system. Without this, severity is guesswork.
 
 ### 2. Attacker view on paper
 

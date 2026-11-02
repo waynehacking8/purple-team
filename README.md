@@ -2,7 +2,7 @@
 
 My security compendium for every service I build or deploy. It gathers what the open-source security-review projects, the industry-standard tools and the company security team's own scans teach, and turns it into one review workflow I run before the security team scans.
 
-Status, 2026-11-02: knowledge base and plan are in place (this file, `docs/sources/`, `docs/PLAN.md`). The skill body (`SKILL.md`) is not written yet; see `docs/HANDOFF.md`.
+Status, 2026-11-02: `SKILL.md` (ten-step workflow) and `scripts/` (`review.sh` entry point, `detect-stack.sh`, `static-pass.sh`, `live-check.sh`) are in use. Proof runs are in `docs/proof/`; state and open work in `docs/HANDOFF.md`.
 
 ## The three parts
 
@@ -31,7 +31,7 @@ Each file in `docs/sources/` records what was borrowed and what was dropped, wit
 
 ## Industry-standard tools
 
-Static and read-only only. Installed on this Mac (user-local, each checked against its published digest, 2026-11-02): semgrep 1.183.0, gitleaks 8.30.1, osv-scanner 2.7.0, trivy 0.76.1, hadolint 2.15.1, kube-linter 0.8.3, trufflehog 3.99.7, kubescape 4.0.17.
+Static and read-only only. Installed on this Mac (user-local, each checked against its published digest, 2026-11-02): semgrep 1.183.0, gitleaks 8.30.1, osv-scanner 2.7.0, trivy 0.76.1, hadolint 2.15.1, kube-linter 0.8.3, trufflehog 3.99.7, kubescape 4.0.17, ruff 0.17.3, bandit 1.9.4.
 
 The full list of every project, tool and standard found, with status (use, adopt next, know, skip), is `docs/CATALOG.md`. The workflow that combines them with the company practice is `docs/BEST-PRACTICE.md`; the company practice itself is `docs/sources/company-standards.md`.
 
